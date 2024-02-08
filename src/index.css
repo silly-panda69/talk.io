@@ -1,13 +1,292 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+  font-family: "Architects Daughter", cursive;
+}
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.185); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 255, 0.568);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 177);
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.home{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.title h1{
+  font-size: 64px;
+  text-decoration: underline;
+  margin-bottom: 6px;
+}
+.title-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.title-btn button{
+  padding: 8px;
+  background-color: rgb(100, 100, 223);
+  font-size: 20px;
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+  color: azure;
+}
+.title-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.footer{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.left-foot{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  flex-grow: 1;
+  align-items: start;
+}
+.right-foot{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: end;
+}
+.footer button{
+  height: 44px;
+  width: 44px;
+  padding: 8px;
+  background-color: rgb(100, 100, 223);
+  color: aqua;
+  font-size: 20px;
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.drop{
+  position: absolute;
+  background-color: whitesmoke;
+  border: 3px solid rgba(0, 0, 0, 0.322);
+  padding: 8px 8px 8px 8px;
+  left: 60px;
+  width: 200px;
+  bottom: 0px;
+  border-radius: 2px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+.drop-off{
+  opacity: 0;
+  transform: translateY(200px);
+}
+.drop-on{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.settings button{
+  width: 100%;
+  font-size: 16px;
+}
+.settings-children1{
+  overflow-y: hidden;
+  width: 100%;
+}
+.settings-children2{
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 5px;
+  padding-left: 3px;
+}
+.settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.settings button{
+  font-size: 15px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-title{
+  width: 100%;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-title p{
+  flex-grow: 1;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+.settings-title button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: bold;
+}
+.chck{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+.chck p{
+  margin: 0px;
+  margin-bottom: 2px;
+}
+.chck input{
+  height: 16px;
+  width: 16px;
+}
+.settings-scroll{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.log {
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 2px;
+  padding: 4px;
+}
+.log p{
+  margin: 0px;
+  margin-bottom: 2px;
+}
+.log p:nth-child(1){
+  font-size: 20px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.join{
+  width: 100vw;
+  height: 100vh;
+}
+.join-home{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-btn{
+  padding: 10px;
+}
+.navbar-btn button{
+  margin-right: 10px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: blue;
+  height: 33px;
+  width: 33px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.join-home input{
+  padding: 10px;
+  font-size: 20px;
+}
+.join-button{
+  display: flex;
+  gap: 20px;
+}
+.join-button button{
+  background-color: blue;
+  border-color: transparent;
+  font-size: 20px;
+  padding: 3px 10px 3px 10px;
+  color: white;
+  cursor: pointer;
+}
+.new-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.new-btn button{
+  background-color: blue;
+  border-color: transparent;
+  font-size: 20px;
+  padding: 3px 10px 3px 10px;
+  color: white;
+  cursor: pointer;
+}
+.join-padding{
+  height: 140px;
+  background-color: red;
+}
+.join-rounds{
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+.join-rounds p{
+  margin: 5px;
+}
+.join-radio{
+  display: flex;
+}
+.join-radio-grp{
+  display: flex;
+  justify-content: space-between;
 }
