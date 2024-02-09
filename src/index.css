@@ -21,21 +21,25 @@
 body{
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-image: url("./assets/bg.jpg");
 }
 a{
   text-decoration: none;
   color: white;
 }
 .home{
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.title-padding{
+  padding: 100px;
 }
 .title{
   display: flex;
@@ -79,13 +83,11 @@ a{
   flex-direction: column;
   gap: 10px;
   position: relative;
-  flex-grow: 1;
   align-items: start;
 }
 .right-foot{
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   align-items: end;
 }
 .footer button{
@@ -289,4 +291,86 @@ a{
 .join-radio-grp{
   display: flex;
   justify-content: space-between;
+}
+.not-found{
+  height: 100vh;
+  width: 100vw;
+}
+.not-title{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.not-title h1{
+  margin: 0px;
+  font-size: 60px;
+}
+.not-title p{
+  margin: 0px;
+  font-size: 20px;
+}
+.not-padding{
+  margin-top: 600px;
+}
+.carousel-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.carousel-grp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: 2px;
+}
+.carousel{
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.carousel-grp button{
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.918);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+.img-carousel{
+  height: 180px;
+  width: 210px;
+}
+.carousel-title{
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.img-carousel img{
+  height: 180px;
+  width: 210px;
+  background-size: cover;
+  border-radius: 6px;
+}
+.img-title p{
+  margin: 0px;
+  padding-bottom: 4px;
+  font-size: 17px;
+}
+.img-off{
+  opacity: 1;
+}
+.img-on{
+  opacity: 0;
 }
