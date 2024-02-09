@@ -1,10 +1,13 @@
 import React,{useEffect, useState} from 'react';
+import talking from '../assets/talking.jpeg'
+import guessing from '../assets/guessing.jpeg'
+import winning from '../assets/winner.jpg';
 
 const Carousel = () => {
     const carouselData=[
-        {title: "Talk",link: "talking.jpeg"},
-        {title: "Guess the player",link: "guessing.jpeg"},
-        {title: "Get Points",link: "winner.jpg"}
+        {title: "Talk",link: talking},
+        {title: "Guess the player",link: guessing},
+        {title: "Get Points",link: winning}
     ];
     const [num,setNum]=useState(1);
     const [change,setChange]=useState(false);
@@ -41,7 +44,7 @@ const Carousel = () => {
                 <button onClick={changePrev}>{"<-"}</button>
                 <div className={`carousel ${change? "img-on" : "img-off"}`} >
                     <div className='img-carousel'>
-                        <img src={require(`../assets/${carouselData[num-1].link}`)} alt="" />
+                        <img src={carouselData[num-1].link} alt="" />
                     </div>
                     <div className='img-title'>
                         <p>{carouselData[num-1].title}</p>
