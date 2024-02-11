@@ -39,6 +39,9 @@ const Carousel = () => {
     }
     return (
         <div className='carousel-page'>
+            <img src={talking} alt="" loading='eager' height={0}/>
+            <img src={guessing} alt="" loading='eager'  height={0}/>
+            <img src={winning} alt="" loading='eager' height={0}/>
             <p className='carousel-title'>How to play ?</p>
             <div className='carousel-grp'>
                 <button onClick={changePrev}>{"<-"}</button>
