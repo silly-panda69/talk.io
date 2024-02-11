@@ -44,7 +44,7 @@ const Carousel = () => {
                 <button onClick={changePrev}>{"<-"}</button>
                 <div className={`carousel ${change? "img-on" : "img-off"}`} >
                     <div className='img-carousel'>
-                        <img src={carouselData[num-1].link} alt="" />
+                        <img src={carouselData[num-1].link} alt="" loading='eager'/>
                     </div>
                     <div className='img-title'>
                         <p>{carouselData[num-1].title}</p>

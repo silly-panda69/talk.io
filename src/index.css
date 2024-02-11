@@ -374,3 +374,144 @@ a{
 .img-on{
   opacity: 0;
 }
+.game-page{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.round-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.round{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.round button{
+  background-color: blue;
+  border: 1px solid transparent;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.round h1{
+  margin: 0px;
+  padding-top: 8px;
+}
+.round p{
+  margin: 0px;
+  padding-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.score-board{
+  width: 200px;
+  background-color: white;
+  padding: 10px;
+}
+.score-player p{
+  margin: 0px;
+  padding: 6px;
+}
+.round-dot-grp{
+  display: flex;
+  gap: 16px;
+}
+.round-dot{
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.playing-ground{
+  margin:0px 10px 0px 10px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.ground-1{
+  padding-top: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.ground-2{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.voice-box{
+  background-color: white;
+  flex-grow: 1;
+  height: 100px;
+}
+.chat-board{
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.chat-area{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 300px;
+}
+.chat-fix{
+  flex: 1 1 auto;
+}
+.chats-area:nth-child(1){
+  padding-top: 4px;
+}
+.chats-area p{
+  margin: 4px;
+  
+}
+.chat-box{
+  margin-top: 10px;
+  display: flex;
+  width: 200px;
+}
+.chat-box form{
+  display: flex;
+  flex-grow: 1;
+}
+.score-ground{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score-title{
+  margin: 0px;
+  padding-bottom: 4px;
+}
+.chat-box input{
+  flex-grow: 1;
+  outline: none;
+  border-color: transparent;
+}
+.chat-box button{
+  background-color: blue;
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+}
